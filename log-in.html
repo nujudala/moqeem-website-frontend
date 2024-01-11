@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS ارتباط تشعبي لملف تنسيق-->
+    <link rel="stylesheet" href="style-log-in.css" />
+    <!--ارتباط مكتبة ايقونات-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!--اسم الظاهر فوق الصفحة في المتصفح-->
+    <title> تسجيل الدخول</title>
+    <!--شعار يظهر فوق جنب اسم الصفحة في المتصفح-->
+    <link rel="icon" href="logo/logo.png" />
+  </head>
+  <body>
+    <!--قوائم الصفحة-->
+    <header>
+      <!--شعار يمين الصفحة فوق-->
+      <div class="logo">
+        <img src="logo/logo.png" alt="" />
+      </div>
+      <!--قوائم الصفحات واتجاها-->
+      <div class="nav">
+        <ul>
+          <li><a href="index.html#a4">تواصل معنا</a></li>
+          <li><a href="index.html#a3">مسلسلات</a></li>
+          <li><a href="index.html#a2">أفلام</a></li>
+          <li><a href="index.html">الرئيسية</a></li>
+        </ul>
+      </div>
+      <!--رز التسجيل الدخول مع ايقونات التنبية والبحث-->
+      <div class="user">
+        <i class="fas fa-search"></i>
+        <a href=""> تسجيل الدخول</a>
+      </div>
+    </header>
+    <!------------------------------------------------------------------------->
+    <!-- قسم تسجيل الدخول-->
+    <div class="hero">
+        <div class="form-box">
+            <!--قائمة مصغرة عن الصفحات التسجيل-->
+            <div class="btn-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">تسجيل الدخول</button>
+                <button type="button" class="toggle-btn"onclick="register()">تسجيل جديد</button>
+            </div>
+
+            <!--عناصر صفحة تسجيل الدخول-->
+            <form id="login" class="input-group" dir="rtl">
+                <input type="text" class="input-field" placeholder="اسم المستخدم" required>
+                <input type="text" class="input-field" placeholder="كلمة المرور " required>
+                <input type="checkbox" class="check-box"><span>تذكر كلمة المرور</span>
+                <button type="submit" class="submit-btn">تسجيل الدخول</button>
+            </form>
+
+            <!--عناصر صفحة التسجيل جديد-->
+            <form id="register" class="input-group" dir="rtl">
+                <input type="text" class="input-field" placeholder="اسم المستخدم" required>
+                <input type="email" class="input-field" placeholder="بريد الإلكتروني  " required>
+                <input type="text" class="input-field" placeholder="كلمة المرور " required>
+                <input type="checkbox" class="check-box"><span>  قرأت شروط وبيان الخصوصية</span>
+                <button type="submit" class="submit-btn">تسجيل الآن</button>
+            </form>
+        </div>
+    </div>
+    <!-------------------------------------------------------------->
+    <!--جافا سكربت-->
+    <script>
+        //احداثيات تحرك القوائم الصفحات مع تغير اتجاه عرض العنوانين في x,y,z 
+        var x =document.getElementById("login");
+        var y =document.getElementById("register");
+        var z =document.getElementById("btn");
+
+        //تحريك احداثيات القوائم تسجيل جديد يسار 
+        function register() {
+            x.style.left = "-550px";
+            y.style.left = "150px";
+            z.style.left = "150px";
+        }
+        //تحريك احداثيات القوائم تسجيل دخول يمين
+        function login() {
+            x.style.left = "150px";
+            y.style.left = "550px";
+            z.style.left = "0px";
+        }
+    </script>
+    <!------------------------------------------------------------------------->
+    <!--تذيل الصفحة-->
+    <div class="footer">
+      <div class="inside-footer">
+        <div class="footer-cintainer">
+          <!--شعار الموقع-->
+          <div class="logopart">
+            <img src="logo/logo.png" alt="" />
+          </div>
+
+          <!--حقوق الطبع والنشر-->
+          <div class="copyright">
+            <p>
+              copyright &copy <span>نجود - ندى - وجدان </span>,All Rights
+              Reserved-2024.
+            </p>
+          </div>
+
+          <!--ايقونات السوشل ميديا-->
+          <div class="socials">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-tiktok"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+          </div>
+
+          <!--زر الأشتراك-->
+          <div class="btn4">
+            <a href="">أشترك الآن</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
