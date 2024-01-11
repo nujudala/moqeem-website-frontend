@@ -117,7 +117,7 @@ margin-top: -10px;
 .inside-horopage h1 {
 font-size:80px;
 margin-top: -40px;
-margin-left: 60px;
+margin-left: 50px;
 }
 /* تنسيق تصنيف البوستر الأعلان*/
 .inside-horopage p {
@@ -186,7 +186,7 @@ text-align: right;
 /*تنسيق محاذات الصفحة*/
 .footer {
     position: absolute;
-    margin-top: 600px;
+    margin-top: 650px;
     height: 16vh;
     background: #141414;
     width: 100%;
