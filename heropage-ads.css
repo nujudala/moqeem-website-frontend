@@ -186,7 +186,7 @@ text-align: right;
 /*تنسيق محاذات الصفحة*/
 .footer {
     position: absolute;
-    margin-top: 650px;
+    margin-top: 550px;
     height: 16vh;
     background: #141414;
     width: 100%;
